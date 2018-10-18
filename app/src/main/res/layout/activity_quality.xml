@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.example.posdaming.view.custom.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="@string/quality_analysis" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/text_space_big"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速扫码质检条码号："
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N300N"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/text_space_big"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="质检单号："
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N300N"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/text_space_big"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="品名："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汽缸"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="属性："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汽缸"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/text_space_big"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="规格："
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N300N"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/text_space_big"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包装件："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汽缸"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="汽缸"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/text_space_big"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总数量："
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N300N"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/text_border"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="检验项目"
+                android:textColor="@color/font_black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="正常范围"
+                android:textColor="@color/font_black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="检验结果"
+                android:textColor="@color/font_black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="结果判定"
+                android:textColor="@color/font_black"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="外包装"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="完整"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="完整"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="合格"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="尺寸"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="22*22"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="22*25"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:paddingTop="@dimen/text_space_big"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:text="不合格"
+                android:textColor="@color/font_black"
+                android:layout_width="0dp"
+                android:background="@drawable/text_border"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:gravity="center"
+            android:paddingTop="@dimen/text_space_big"
+            android:paddingBottom="@dimen/text_space_big"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:text="检验员:张三"
+            android:textColor="@color/font_black"
+            android:layout_width="0dp"
+            android:background="@drawable/text_border"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:paddingTop="@dimen/text_space_big"
+            android:paddingBottom="@dimen/text_space_big"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:text="复核人:张三"
+            android:textColor="@color/font_black"
+            android:layout_width="0dp"
+            android:background="@drawable/text_border"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/text_space"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:paddingTop="@dimen/text_space"
+            android:text="方钢前盖"
+            android:textColor="@color/highlight" />
+
+        <TextView
+            android:id="@+id/tv_spec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/text_space"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:paddingTop="@dimen/text_space"
+            android:text="方钢前盖"
+            android:textColor="@color/highlight"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/text_space"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:paddingTop="@dimen/text_space">
+
+            <EditText
+                android:selectAllOnFocus="true"
+                android:id="@+id/edt_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_border"
+                android:gravity="center"
+                android:inputType="number"
+                android:paddingLeft="3dp"
+                android:textColor="@color/highlight"
+
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_unit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:paddingBottom="@dimen/text_space"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:paddingTop="@dimen/text_space"
+            android:text="个"
+            android:textColor="@color/highlight" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/text_space"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingRight="@dimen/text_space"
+            android:paddingTop="@dimen/text_space"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/delete_minus" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.posdaming">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".main.AnimateActivity" />
+        <!--质检单-->
+        <activity
+            android:name=".controller.quality.QualityOutsourceActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--质检单-->
+        <activity
+            android:name=".controller.quality.QualityOutsourcingDetailActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--质检单-->
+        <activity
+            android:name=".controller.quality.QualityOutsourcingActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--完工入库单-->
+        <activity
+            android:name=".controller.stockin.StockInFinishActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--其他入库单-->
+        <activity
+            android:name=".controller.stockin.StockInOtherActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--外购入库单-->
+        <activity
+            android:name=".controller.stockin.StockInOutsourcingActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--委外入库单-->
+        <activity android:name=".controller.stockin.StockInOutsourceActivity" />
+        <!--工序入库单-->
+        <activity android:name=".controller.stockin.StockInProcessActivity" />
+        <!--上架单-->
+        <activity
+            android:name=".controller.inner.PutOnActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--出库单-->
+        <activity android:name=".controller.stockout.StockOutActivity" />
+        <!--快速出库单-->
+        <activity android:name=".controller.stockout.QuickStockOutActivity" />
+        <!--盘点单-->
+        <activity
+            android:name=".controller.inner.CheckActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--移库单-->
+        <activity
+            android:name=".controller.inner.TransferActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--下架单-->
+        <activity android:name=".controller.stockout.PutOutActivity" />
+        <!--查询-->
+        <activity
+            android:name=".controller.query.QueryActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--详细查询-->
+        <activity android:name=".controller.query.QueryDetailActivity" />
+
+        <!--快速领料-->
+        <activity
+            android:name=".controller.stockout.StockOutSpeedActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--普通领料-->
+        <activity
+            android:name=".controller.stockout.StockOutNormalActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--其他领料-->
+        <activity
+            android:name=".controller.stockout.StockOutOtherActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--委外领料-->
+        <activity
+            android:name=".controller.stockout.StockOutOutsourceActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!--登录界面-->
+        <activity android:name=".controller.login.LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.example.posdaming.view.custom.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="上架单" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_seletor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/text_space"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingTop="@dimen/text_space">
+
+            <TextView
+                android:id="@+id/tv_scan_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_checked" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="扫描录入"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_handle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/layout_seletor"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/text_space"
+            android:paddingLeft="@dimen/text_space"
+            android:paddingTop="@dimen/text_space">
+
+            <TextView
+                android:id="@+id/tv_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio_button_uncheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="手动录入"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="扫码物料条码："
+            android:textColor="@color/font_black" />
+
+        <EditText
+            android:id="@+id/edt_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textColor="@color/highlight"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设备编号："
+            android:textColor="@color/font_black" />
+
+        <EditText
+            android:id="@+id/edt_equ"
+            android:background="@drawable/edit_border"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/highlight" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:layout_weight="5"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space"
+                android:text="物料名称"
+                android:textColor="@color/font_black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space"
+                android:text="上架数量"
+                android:textColor="@color/font_black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space"
+                android:text="单位"
+                android:textColor="@color/font_black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space"
+                android:text="移除"
+                android:textColor="@color/font_black"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:descendantFocusability="beforeDescendants"
+            android:fastScrollEnabled="false"
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space"
+                android:text=""
+                android:textColor="@color/highlight" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingLeft="3dp"
+                    android:textColor="@color/highlight"
+                    android:visibility="gone"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space"
+                android:text=""
+                android:textColor="@color/highlight" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/text_space"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/add" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="操作员："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张三"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space"
+                android:background="@drawable/edit_border_white"
+                android:text="保存"
+                android:textColor="@color/highlight" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space">
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="审核："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:id="@+id/tv_confirm_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李四"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/space"
+                android:background="@drawable/edit_border_white"
+                android:text="确认"
+                android:textColor="@color/highlight" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

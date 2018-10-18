@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.example.posdaming.view.custom.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:title="@string/put_out" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space_big">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="架单号："
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N300N"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space_big">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速扫码物料："
+            android:textColor="@color/font_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N300N"
+            android:textColor="@color/font_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space_big">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="物料："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规格："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space_big">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单位："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盒"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/text_space_big"
+        android:paddingLeft="@dimen/text_space"
+        android:paddingRight="@dimen/text_space"
+        android:paddingTop="@dimen/text_space_big">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫码分拣备货："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单位："
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="盒"
+                android:textColor="@color/font_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:layout_marginBottom="@dimen/text_space_big"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edit_border_white"
+        android:text="扫码取消物料设备关联"
+        android:textColor="@color/highlight"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space"
+        android:layout_marginRight="@dimen/space"
+        android:background="@drawable/text_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="设备"
+                android:textColor="@color/font_black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="扫描解除"
+                android:textColor="@color/font_black"
+                android:textStyle="bold" />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="原始库位"
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="3-1"
+                android:textColor="@color/font_black" />
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="目标库位"
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="5-2-01"
+                android:textColor="@color/font_black" />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="周转箱"
+                android:textColor="@color/font_black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_border"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_space_big"
+                android:paddingLeft="@dimen/text_space"
+                android:paddingRight="@dimen/text_space"
+                android:paddingTop="@dimen/text_space_big"
+                android:text="zp01-02"
+                android:textColor="@color/font_black" />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginBottom="@dimen/space"
+        >
+        <Button
+            android:layout_marginRight="@dimen/space"
+
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_border_white"
+            android:text="确认"
+            android:textColor="@color/highlight"
+            />
+        <Button
+            android:layout_marginRight="@dimen/space"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/edit_border_white"
+            android:text="复核"
+            android:textColor="@color/highlight"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 实心 -->
+    <solid android:color="@color/font_black" />
+    <!-- 边框 -->
+    <stroke
+        android:width="1px"
+        android:color="@color/font_black" />
+    <!-- 圆角 -->
+    <corners android:radius="0dp" />
+    <!-- 边距 -->
+
+    <!-- 渐变 -->
+    <gradient
+        android:angle="270"
+        android:endColor="@color/white"
+        android:startColor="@color/white" />
+</shape>

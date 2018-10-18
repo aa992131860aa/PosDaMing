@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="入库管理"
+        android:textColor="@color/query"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="outsourcingClick"
+            android:text="外购入库" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="outsourceClick"
+            android:text="委外入库"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="otherClick"
+            android:text="其他入库" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="finishClick"
+            android:text="完工入库" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="processClick"
+            android:text="工序入库"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="出库管理"
+        android:textColor="@color/stock_out"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:visibility="visible"
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_out"
+            android:onClick="stockOutSpeedClick"
+            android:text="快速领料" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_out"
+            android:onClick="stockOutNormalClick"
+            android:text="普通领料" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_out"
+            android:onClick="stockOutOtherClick"
+            android:text="其他出库" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_out"
+            android:onClick="stockOutOutsourceClick"
+            android:text="委外出库" />
+
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_out"
+            android:onClick="queryClick"
+            android:text="完工入库"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="质检管理"
+        android:textColor="@color/inner"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_inner"
+            android:onClick="qualityOutsourcingClick"
+            android:text="外购质检" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:visibility="invisible"
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_inner"
+            android:onClick="qualityOutsourceClick"
+            android:text="委外质检" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="其他入库"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="工序入库"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="完工入库"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="内部管理"
+        android:textColor="@color/quality"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_quality"
+            android:onClick="putOnClick"
+            android:text="物料上架" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_quality"
+            android:onClick="checkClick"
+            android:text="物料盘点" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_quality"
+            android:onClick="transferClick"
+            android:text="物料移库" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="工序入库"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="完工入库"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="内部管理"
+        android:textColor="@color/quality"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_in"
+            android:onClick="queryClick"
+            android:text="查询" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_quality"
+            android:onClick="checkClick"
+            android:text="物料盘点"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_quality"
+            android:onClick="transferClick"
+            android:text="物料移库"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="工序入库"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="gone" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="完工入库"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_quality"
+            android:onClick="qualityManagerClick"
+            android:text="@string/quality_manager" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_in"
+            android:onClick="stockInManagerClick"
+            android:text="@string/stock_in_manager" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_out"
+            android:onClick="stockOutManagerClick"
+            android:text="@string/stock_out_manager" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_inner"
+            android:onClick="putOutClick"
+            android:text="@string/inner_manager" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_query"
+            android:onClick="queryClick"
+            android:text="@string/query" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <Button
+            style="@style/main_title_btn"
+            android:background="@drawable/main_btn_stock_in"
+            android:text="@string/stock_in_manager"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>
